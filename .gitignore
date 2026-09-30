@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+.venv/
+
+# MATLAB autosave / cache
+*.asv
+*.autosave
+slprj/
+
+# Local / env clutter
+logs/
+Thumbs.db
+desktop.ini
+.DS_Store
