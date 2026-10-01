@@ -8,7 +8,6 @@ if strcmp(kind,'sweep')
         item=pair{1}; f=figure('Color','w');
         contourf(Qg,Hg,item{2},16,'LineColor','none'); colorbar;
         xlabel('Absorbed heater power [kW]'); ylabel('Liquid height [m]'); title(item{3});
-        hold on; plot(S.p.Qdot_ref/1e3,S.p.H_ref,'wo','MarkerFaceColor','r');
         savefig_png(f,figDir,item{1});
     end
     data={S.Q_list/1e3,S.mdot_vs_Q*60,'mdot_vs_Q','Absorbed heater power [kW]','Mass flow [kg/min]'; ...
@@ -61,5 +60,6 @@ else
 end
 end
 function savefig_png(f,dir,name)
+fontsize(f,14,'points');
 print(f,fullfile(dir,[name '.png']),'-dpng','-r150'); close(f);
 end

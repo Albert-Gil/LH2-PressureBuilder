@@ -11,6 +11,7 @@ import numpy as np
 from scipy.io import loadmat
 
 RESULTS = Path(__file__).resolve().parent.parent / "results"
+plt.rcParams.update({"font.size": 14, "axes.titlesize": 15, "legend.fontsize": 12})
 
 
 def load_results(path):
@@ -69,7 +70,7 @@ def plot_scenario(kind, directory=RESULTS):
         axes[1].plot(t, q[:, k], color=colors(k % 10), label=label)
     decorate(axes[1], "Time [min]", "Absorbed heater power [kW]", "Shared power schedules")
     axes[1].margins(y=0.08)  # Autoscaling includes every case, including constant power.
-    axes[1].legend(fontsize=8)
+    axes[1].legend()
     outputs = [save(fig, directory, f"{kind}_scenario_drivers")]
     fig, axes = plt.subplots(2, 1, figsize=(9, 7), constrained_layout=True)
     fig.suptitle(f"LH2 vaporizer - {context}", fontweight="bold")
@@ -79,7 +80,7 @@ def plot_scenario(kind, directory=RESULTS):
     decorate(axes[0], "Time [min]", "Mass flow [kg/min]", "Circulation through the heater")
     decorate(axes[1], "Time [min]", "Outlet temperature [K]", "Heater outlet / adiabatic return")
     for ax in axes:
-        ax.legend(fontsize=8)
+        ax.legend()
     outputs.append(save(fig, directory, f"{kind}_scenario_mdot_Tout"))
     return outputs
 
@@ -101,7 +102,6 @@ def plot_sweep(directory=RESULTS):
         # pcolormesh also supports one-row or one-column custom sweeps.
         mesh = ax.pcolormesh(q, h, np.ma.masked_invalid(data), shading="nearest", cmap="viridis")
         fig.colorbar(mesh, ax=ax, label=label)
-        ax.plot(s["p"]["Qdot_ref"]/1000, s["p"]["H_ref"], "wo", mec="black")
         ax.set(xlabel="Absorbed heater power [kW]", ylabel="Liquid height [m]",
                title=f"Horizontal heater / vertical return - {label}")
         outputs.append(save(fig, directory, name))
@@ -116,7 +116,7 @@ def plot_sweep(directory=RESULTS):
         if name == "mdot_vs_Q":
             ax.plot(q, np.atleast_1d(s["ceiling_vs_Q"])*60, "--",
                     label="Complete-vaporization boundary Q/(hg-hL)")
-            ax.legend(fontsize=9)
+            ax.legend()
         elif name == "mdot_vs_H":
             title = f"Absorbed heater power = {q[iq]:.3g} kW"
         elif name == "T_out_vs_Q":
