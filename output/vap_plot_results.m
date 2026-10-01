@@ -37,7 +37,7 @@ elseif strcmp(kind,'power_decay')
     sgtitle('Quasi-steady power decay; imposed pressure and inlet temperature');
     savefig_png(f,figDir,'power_decay_transient');
 else
-    f=figure('Color','w','Position',[100 100 900 750]); tiledlayout(2,1);
+    f=figure('Color','w','Position',[100 100 1300 800]); tiledlayout(2,1);
     nexttile;
     if strcmp(kind,'SOC')
         yyaxis left; plot(S.tmin,100*S.SOC); ylabel('Volume fill [%]');
@@ -47,19 +47,21 @@ else
     end
     xlabel('Time [min]'); grid on; title('Prescribed liquid level');
     nexttile; plot(S.tmin,S.Qdot/1e3,'LineWidth',1.5); grid on;
-    xlabel('Time [min]'); ylabel('Absorbed heater power [kW]'); legend(S.labels,'Location','best');
+    xlabel('Time [min]'); ylabel('Absorbed heater power [kW]');
+    lgd=legend(S.labels); lgd.Layout.Tile='east';
     sgtitle([kind ' scenario drivers']);
     savefig_png(f,figDir,[kind '_scenario_drivers']);
-    f=figure('Color','w','Position',[100 100 900 750]); tiledlayout(2,1);
+    f=figure('Color','w','Position',[100 100 1300 800]); tiledlayout(2,1);
     nexttile; plot(S.tmin,60*S.mdot,'LineWidth',1.5); ylabel('Mass flow [kg/min]');
-    xlabel('Time [min]'); grid on; legend(S.labels,'Location','best');
+    xlabel('Time [min]'); grid on;
+    lgd=legend(S.labels); lgd.Layout.Tile='east';
     nexttile; plot(S.tmin,S.T_out,'LineWidth',1.5); ylabel('Outlet temperature [K]');
-    xlabel('Time [min]'); grid on; legend(S.labels,'Location','best');
-    sgtitle(sprintf('%s scenario (failed points: %d)',kind,S.failed_count));
+    xlabel('Time [min]'); grid on;
+    sgtitle([kind ' scenario']);
     savefig_png(f,figDir,[kind '_scenario_mdot_Tout']);
 end
 end
 function savefig_png(f,dir,name)
-fontsize(f,14,'points');
+fontsize(f,18,'points');
 print(f,fullfile(dir,[name '.png']),'-dpng','-r150'); close(f);
 end

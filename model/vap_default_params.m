@@ -26,7 +26,7 @@ p.K_g = 6.0;
 p.Qdot_ref = 6e3;          % [W] documented approximate field comparison
 p.STM_mdot_annotation = 0.30/60; % [kg/s] comparison only, not solver input
 
-p.H_list = linspace(0.25, 2.0, 32);
+p.H_list = linspace(0.01, 2.0, 32);
 p.Qdot_list = linspace(0.1, 10, 50)*1e3;
 % Identical power schedules isolate the effect of height between scenarios.
 p.scenario_t_end = 90*60;

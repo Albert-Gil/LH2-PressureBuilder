@@ -11,7 +11,7 @@ import numpy as np
 from scipy.io import loadmat
 
 RESULTS = Path(__file__).resolve().parent.parent / "results"
-plt.rcParams.update({"font.size": 14, "axes.titlesize": 15, "legend.fontsize": 12})
+plt.rcParams.update({"font.size": 18, "axes.titlesize": 19, "legend.fontsize": 14})
 
 
 def load_results(path):
@@ -55,7 +55,7 @@ def plot_scenario(kind, directory=RESULTS):
     colors = plt.get_cmap("tab10")
     context = (f"prescribed volume fill {100*float(s['SOC0']):g}% to {100*float(s['SOC1']):g}%"
                if kind == "SOC" else f"constant height {float(s['H_const']):.2f} m")
-    fig, axes = plt.subplots(2, 1, figsize=(9, 7), constrained_layout=True)
+    fig, axes = plt.subplots(2, 1, figsize=(13, 8), constrained_layout=True)
     fig.suptitle(f"LH2 vaporizer - {context}", fontweight="bold")
     if kind == "SOC":
         axes[0].plot(t, 100*np.atleast_1d(s["SOC"]), color="black")
@@ -70,17 +70,16 @@ def plot_scenario(kind, directory=RESULTS):
         axes[1].plot(t, q[:, k], color=colors(k % 10), label=label)
     decorate(axes[1], "Time [min]", "Absorbed heater power [kW]", "Shared power schedules")
     axes[1].margins(y=0.08)  # Autoscaling includes every case, including constant power.
-    axes[1].legend()
+    fig.legend(*axes[1].get_legend_handles_labels(), loc="outside right center")
     outputs = [save(fig, directory, f"{kind}_scenario_drivers")]
-    fig, axes = plt.subplots(2, 1, figsize=(9, 7), constrained_layout=True)
+    fig, axes = plt.subplots(2, 1, figsize=(13, 8), constrained_layout=True)
     fig.suptitle(f"LH2 vaporizer - {context}", fontweight="bold")
     for k, label in enumerate(labels):
         axes[0].plot(t, mdot[:, k], color=colors(k % 10), label=label)
         axes[1].plot(t, tout[:, k], color=colors(k % 10), label=label)
     decorate(axes[0], "Time [min]", "Mass flow [kg/min]", "Circulation through the heater")
     decorate(axes[1], "Time [min]", "Outlet temperature [K]", "Heater outlet / adiabatic return")
-    for ax in axes:
-        ax.legend()
+    fig.legend(*axes[0].get_legend_handles_labels(), loc="outside right center")
     outputs.append(save(fig, directory, f"{kind}_scenario_mdot_Tout"))
     return outputs
 
