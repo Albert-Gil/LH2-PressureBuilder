@@ -1,0 +1,3592 @@
+{
+  "source_sha256": "70cf2237a3b89975a7c6843977244b43733ff02408f386b2c91bf6d02a5ac174",
+  "coolprop_version": "7.2.0",
+  "samples_per_domain": 512,
+  "configured_temperature_cap_K": 250.0,
+  "eos_temperature_limit_K": 1000.0,
+  "flow_hard_max_kg_s": 5.0,
+  "control_pressure_residual_Pa": 1.1368683772161603e-12,
+  "counts": {
+    "temperature_cap_excluded": 176,
+    "no_root_found_to_eos_limit": 85,
+    "accepted": 1339
+  },
+  "caveat": "Independent Python equation audit, not MATLAB execution. Finite sign-change scans are not a proof of no root.",
+  "records": [
+    {
+      "row": 0,
+      "column": 0,
+      "height_m": 0.01,
+      "power_W": 360.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        3.169983497732658e-05
+      ],
+      "relaxed_root_temperatures_K": [
+        776.783056566215
+      ]
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "height_m": 0.01,
+      "power_W": 1087.3469387755101,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        8.984777000935414e-05
+      ],
+      "relaxed_root_temperatures_K": [
+        827.4987023371466
+      ]
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "height_m": 0.01,
+      "power_W": 1814.6938775510205,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00013710066840524223
+      ],
+      "relaxed_root_temperatures_K": [
+        904.2213349661713
+      ]
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "height_m": 0.01,
+      "power_W": 2542.0408163265306,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 4,
+      "height_m": 0.01,
+      "power_W": 3269.387755102041,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 5,
+      "height_m": 0.01,
+      "power_W": 3996.734693877551,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 6,
+      "height_m": 0.01,
+      "power_W": 4724.081632653062,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 7,
+      "height_m": 0.01,
+      "power_W": 5451.428571428572,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 8,
+      "height_m": 0.01,
+      "power_W": 6178.775510204082,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 9,
+      "height_m": 0.01,
+      "power_W": 6906.122448979593,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 10,
+      "height_m": 0.01,
+      "power_W": 7633.469387755102,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 11,
+      "height_m": 0.01,
+      "power_W": 8360.816326530614,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 12,
+      "height_m": 0.01,
+      "power_W": 9088.163265306124,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 13,
+      "height_m": 0.01,
+      "power_W": 9815.510204081635,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 14,
+      "height_m": 0.01,
+      "power_W": 10542.857142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 15,
+      "height_m": 0.01,
+      "power_W": 11270.204081632655,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 16,
+      "height_m": 0.01,
+      "power_W": 11997.551020408164,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 17,
+      "height_m": 0.01,
+      "power_W": 12724.897959183674,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 18,
+      "height_m": 0.01,
+      "power_W": 13452.244897959186,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 19,
+      "height_m": 0.01,
+      "power_W": 14179.591836734695,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 20,
+      "height_m": 0.01,
+      "power_W": 14906.9387755102,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 21,
+      "height_m": 0.01,
+      "power_W": 15634.285714285712,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 22,
+      "height_m": 0.01,
+      "power_W": 16361.632653061224,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 23,
+      "height_m": 0.01,
+      "power_W": 17088.979591836734,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 24,
+      "height_m": 0.01,
+      "power_W": 17816.326530612245,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 25,
+      "height_m": 0.01,
+      "power_W": 18543.67346938775,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 26,
+      "height_m": 0.01,
+      "power_W": 19271.020408163266,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 27,
+      "height_m": 0.01,
+      "power_W": 19998.367346938772,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 28,
+      "height_m": 0.01,
+      "power_W": 20725.714285714283,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 29,
+      "height_m": 0.01,
+      "power_W": 21453.061224489797,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 30,
+      "height_m": 0.01,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 31,
+      "height_m": 0.01,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 32,
+      "height_m": 0.01,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 33,
+      "height_m": 0.01,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 34,
+      "height_m": 0.01,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 35,
+      "height_m": 0.01,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 36,
+      "height_m": 0.01,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 37,
+      "height_m": 0.01,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 38,
+      "height_m": 0.01,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 39,
+      "height_m": 0.01,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 40,
+      "height_m": 0.01,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 41,
+      "height_m": 0.01,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 42,
+      "height_m": 0.01,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 43,
+      "height_m": 0.01,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 44,
+      "height_m": 0.01,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 45,
+      "height_m": 0.01,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 46,
+      "height_m": 0.01,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 47,
+      "height_m": 0.01,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 48,
+      "height_m": 0.01,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 0,
+      "column": 49,
+      "height_m": 0.01,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 11,
+      "height_m": 0.07419354838709677,
+      "power_W": 8360.816326530614,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0021896693960544345
+      ],
+      "relaxed_root_temperatures_K": [
+        261.25769216883793
+      ]
+    },
+    {
+      "row": 1,
+      "column": 12,
+      "height_m": 0.07419354838709677,
+      "power_W": 9088.163265306124,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0021378701554631207
+      ],
+      "relaxed_root_temperatures_K": [
+        289.9792773961235
+      ]
+    },
+    {
+      "row": 1,
+      "column": 13,
+      "height_m": 0.07419354838709677,
+      "power_W": 9815.510204081635,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0020768806337030433
+      ],
+      "relaxed_root_temperatures_K": [
+        322.0072728517084
+      ]
+    },
+    {
+      "row": 1,
+      "column": 14,
+      "height_m": 0.07419354838709677,
+      "power_W": 10542.857142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002009838679630391
+      ],
+      "relaxed_root_temperatures_K": [
+        357.40114430115403
+      ]
+    },
+    {
+      "row": 1,
+      "column": 15,
+      "height_m": 0.07419354838709677,
+      "power_W": 11270.204081632655,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0019394048587583496
+      ],
+      "relaxed_root_temperatures_K": [
+        396.1590462397969
+      ]
+    },
+    {
+      "row": 1,
+      "column": 16,
+      "height_m": 0.07419354838709677,
+      "power_W": 11997.551020408164,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0018676518326080445
+      ],
+      "relaxed_root_temperatures_K": [
+        438.2703898573986
+      ]
+    },
+    {
+      "row": 1,
+      "column": 17,
+      "height_m": 0.07419354838709677,
+      "power_W": 12724.897959183674,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0017960750323486516
+      ],
+      "relaxed_root_temperatures_K": [
+        483.74773989567353
+      ]
+    },
+    {
+      "row": 1,
+      "column": 18,
+      "height_m": 0.07419354838709677,
+      "power_W": 13452.244897959186,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.001725696472489759
+      ],
+      "relaxed_root_temperatures_K": [
+        532.6313618390823
+      ]
+    },
+    {
+      "row": 1,
+      "column": 19,
+      "height_m": 0.07419354838709677,
+      "power_W": 14179.591836734695,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0016571961804210035
+      ],
+      "relaxed_root_temperatures_K": [
+        584.9745671867342
+      ]
+    },
+    {
+      "row": 1,
+      "column": 20,
+      "height_m": 0.07419354838709677,
+      "power_W": 14906.9387755102,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0016035516791707628
+      ],
+      "relaxed_root_temperatures_K": [
+        635.7974536774152
+      ]
+    },
+    {
+      "row": 1,
+      "column": 21,
+      "height_m": 0.07419354838709677,
+      "power_W": 15634.285714285712,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.001573971555061645
+      ],
+      "relaxed_root_temperatures_K": [
+        679.4774339786226
+      ]
+    },
+    {
+      "row": 1,
+      "column": 22,
+      "height_m": 0.07419354838709677,
+      "power_W": 16361.632653061224,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0015507477041882332
+      ],
+      "relaxed_root_temperatures_K": [
+        721.7725981791491
+      ]
+    },
+    {
+      "row": 1,
+      "column": 23,
+      "height_m": 0.07419354838709677,
+      "power_W": 17088.979591836734,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.001529094583549372
+      ],
+      "relaxed_root_temperatures_K": [
+        764.4665362140141
+      ]
+    },
+    {
+      "row": 1,
+      "column": 24,
+      "height_m": 0.07419354838709677,
+      "power_W": 17816.326530612245,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0015066471259916386
+      ],
+      "relaxed_root_temperatures_K": [
+        808.6831412790737
+      ]
+    },
+    {
+      "row": 1,
+      "column": 25,
+      "height_m": 0.07419354838709677,
+      "power_W": 18543.67346938775,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0014815111731816546
+      ],
+      "relaxed_root_temperatures_K": [
+        855.6113773192797
+      ]
+    },
+    {
+      "row": 1,
+      "column": 26,
+      "height_m": 0.07419354838709677,
+      "power_W": 19271.020408163266,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0014514544676706054
+      ],
+      "relaxed_root_temperatures_K": [
+        906.9726650346319
+      ]
+    },
+    {
+      "row": 1,
+      "column": 27,
+      "height_m": 0.07419354838709677,
+      "power_W": 19998.367346938772,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0014129021807045004
+      ],
+      "relaxed_root_temperatures_K": [
+        965.8855180679137
+      ]
+    },
+    {
+      "row": 1,
+      "column": 28,
+      "height_m": 0.07419354838709677,
+      "power_W": 20725.714285714283,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 29,
+      "height_m": 0.07419354838709677,
+      "power_W": 21453.061224489797,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 30,
+      "height_m": 0.07419354838709677,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 31,
+      "height_m": 0.07419354838709677,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 32,
+      "height_m": 0.07419354838709677,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 33,
+      "height_m": 0.07419354838709677,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 34,
+      "height_m": 0.07419354838709677,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 35,
+      "height_m": 0.07419354838709677,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 36,
+      "height_m": 0.07419354838709677,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 37,
+      "height_m": 0.07419354838709677,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 38,
+      "height_m": 0.07419354838709677,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 39,
+      "height_m": 0.07419354838709677,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 40,
+      "height_m": 0.07419354838709677,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 41,
+      "height_m": 0.07419354838709677,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 42,
+      "height_m": 0.07419354838709677,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 43,
+      "height_m": 0.07419354838709677,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 44,
+      "height_m": 0.07419354838709677,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 45,
+      "height_m": 0.07419354838709677,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 46,
+      "height_m": 0.07419354838709677,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 47,
+      "height_m": 0.07419354838709677,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 48,
+      "height_m": 0.07419354838709677,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 1,
+      "column": 49,
+      "height_m": 0.07419354838709677,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 18,
+      "height_m": 0.13838709677419356,
+      "power_W": 13452.244897959186,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0034060186869606904
+      ],
+      "relaxed_root_temperatures_K": [
+        269.912169211125
+      ]
+    },
+    {
+      "row": 2,
+      "column": 19,
+      "height_m": 0.13838709677419356,
+      "power_W": 14179.591836734695,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0032912817203028496
+      ],
+      "relaxed_root_temperatures_K": [
+        293.8117408745943
+      ]
+    },
+    {
+      "row": 2,
+      "column": 20,
+      "height_m": 0.13838709677419356,
+      "power_W": 14906.9387755102,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0031774677746896993
+      ],
+      "relaxed_root_temperatures_K": [
+        319.6593595781703
+      ]
+    },
+    {
+      "row": 2,
+      "column": 21,
+      "height_m": 0.13838709677419356,
+      "power_W": 15634.285714285712,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00306582077877673
+      ],
+      "relaxed_root_temperatures_K": [
+        347.4222548428875
+      ]
+    },
+    {
+      "row": 2,
+      "column": 22,
+      "height_m": 0.13838709677419356,
+      "power_W": 16361.632653061224,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0029573154260538574
+      ],
+      "relaxed_root_temperatures_K": [
+        377.0479120462527
+      ]
+    },
+    {
+      "row": 2,
+      "column": 23,
+      "height_m": 0.13838709677419356,
+      "power_W": 17088.979591836734,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0028526098791325023
+      ],
+      "relaxed_root_temperatures_K": [
+        408.48647943563685
+      ]
+    },
+    {
+      "row": 2,
+      "column": 24,
+      "height_m": 0.13838709677419356,
+      "power_W": 17816.326530612245,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0027520740299247747
+      ],
+      "relaxed_root_temperatures_K": [
+        441.7036004690224
+      ]
+    },
+    {
+      "row": 2,
+      "column": 25,
+      "height_m": 0.13838709677419356,
+      "power_W": 18543.67346938775,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002655857011277787
+      ],
+      "relaxed_root_temperatures_K": [
+        476.68349844776634
+      ]
+    },
+    {
+      "row": 2,
+      "column": 26,
+      "height_m": 0.13838709677419356,
+      "power_W": 19271.020408163266,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002563960689579791
+      ],
+      "relaxed_root_temperatures_K": [
+        513.4254267222009
+      ]
+    },
+    {
+      "row": 2,
+      "column": 27,
+      "height_m": 0.13838709677419356,
+      "power_W": 19998.367346938772,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0024763008542606547
+      ],
+      "relaxed_root_temperatures_K": [
+        551.9369057271741
+      ]
+    },
+    {
+      "row": 2,
+      "column": 28,
+      "height_m": 0.13838709677419356,
+      "power_W": 20725.714285714283,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0023927506593612465
+      ],
+      "relaxed_root_temperatures_K": [
+        592.2261995296328
+      ]
+    },
+    {
+      "row": 2,
+      "column": 29,
+      "height_m": 0.13838709677419356,
+      "power_W": 21453.061224489797,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002313167700974773
+      ],
+      "relaxed_root_temperatures_K": [
+        634.2954917343525
+      ]
+    },
+    {
+      "row": 2,
+      "column": 30,
+      "height_m": 0.13838709677419356,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002237408461186994
+      ],
+      "relaxed_root_temperatures_K": [
+        678.135581806121
+      ]
+    },
+    {
+      "row": 2,
+      "column": 31,
+      "height_m": 0.13838709677419356,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002165334020312441
+      ],
+      "relaxed_root_temperatures_K": [
+        723.7225536504826
+      ]
+    },
+    {
+      "row": 2,
+      "column": 32,
+      "height_m": 0.13838709677419356,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0020968103764802968
+      ],
+      "relaxed_root_temperatures_K": [
+        771.0165980520627
+      ]
+    },
+    {
+      "row": 2,
+      "column": 33,
+      "height_m": 0.13838709677419356,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002031707279532788
+      ],
+      "relaxed_root_temperatures_K": [
+        819.9623940426512
+      ]
+    },
+    {
+      "row": 2,
+      "column": 34,
+      "height_m": 0.13838709677419356,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.001987360611220504
+      ],
+      "relaxed_root_temperatures_K": [
+        862.9193155025063
+      ]
+    },
+    {
+      "row": 2,
+      "column": 35,
+      "height_m": 0.13838709677419356,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0019584916226540903
+      ],
+      "relaxed_root_temperatures_K": [
+        900.5770983571147
+      ]
+    },
+    {
+      "row": 2,
+      "column": 36,
+      "height_m": 0.13838709677419356,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0019352383006657789
+      ],
+      "relaxed_root_temperatures_K": [
+        936.5312045622886
+      ]
+    },
+    {
+      "row": 2,
+      "column": 37,
+      "height_m": 0.13838709677419356,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0019145996471040278
+      ],
+      "relaxed_root_temperatures_K": [
+        971.9118638470184
+      ]
+    },
+    {
+      "row": 2,
+      "column": 38,
+      "height_m": 0.13838709677419356,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 39,
+      "height_m": 0.13838709677419356,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 40,
+      "height_m": 0.13838709677419356,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 41,
+      "height_m": 0.13838709677419356,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 42,
+      "height_m": 0.13838709677419356,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 43,
+      "height_m": 0.13838709677419356,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 44,
+      "height_m": 0.13838709677419356,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 45,
+      "height_m": 0.13838709677419356,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 46,
+      "height_m": 0.13838709677419356,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 47,
+      "height_m": 0.13838709677419356,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 48,
+      "height_m": 0.13838709677419356,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 2,
+      "column": 49,
+      "height_m": 0.13838709677419356,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 3,
+      "column": 22,
+      "height_m": 0.20258064516129032,
+      "power_W": 16361.632653061224,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004433883438344212
+      ],
+      "relaxed_root_temperatures_K": [
+        252.8614102762262
+      ]
+    },
+    {
+      "row": 3,
+      "column": 23,
+      "height_m": 0.20258064516129032,
+      "power_W": 17088.979591836734,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004295517005478355
+      ],
+      "relaxed_root_temperatures_K": [
+        271.81683599645663
+      ]
+    },
+    {
+      "row": 3,
+      "column": 24,
+      "height_m": 0.20258064516129032,
+      "power_W": 17816.326530612245,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004159413874040046
+      ],
+      "relaxed_root_temperatures_K": [
+        292.1453726664553
+      ]
+    },
+    {
+      "row": 3,
+      "column": 25,
+      "height_m": 0.20258064516129032,
+      "power_W": 18543.67346938775,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004026407479076937
+      ],
+      "relaxed_root_temperatures_K": [
+        313.84057013703
+      ]
+    },
+    {
+      "row": 3,
+      "column": 26,
+      "height_m": 0.20258064516129032,
+      "power_W": 19271.020408163266,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003897243888348261
+      ],
+      "relaxed_root_temperatures_K": [
+        336.8713275588431
+      ]
+    },
+    {
+      "row": 3,
+      "column": 27,
+      "height_m": 0.20258064516129032,
+      "power_W": 19998.367346938772,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0037724959863096133
+      ],
+      "relaxed_root_temperatures_K": [
+        361.19490113660953
+      ]
+    },
+    {
+      "row": 3,
+      "column": 28,
+      "height_m": 0.20258064516129032,
+      "power_W": 20725.714285714283,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0036525301320696345
+      ],
+      "relaxed_root_temperatures_K": [
+        386.768542196202
+      ]
+    },
+    {
+      "row": 3,
+      "column": 29,
+      "height_m": 0.20258064516129032,
+      "power_W": 21453.061224489797,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00353751808970747
+      ],
+      "relaxed_root_temperatures_K": [
+        413.5571718430339
+      ]
+    },
+    {
+      "row": 3,
+      "column": 30,
+      "height_m": 0.20258064516129032,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0034274753725131047
+      ],
+      "relaxed_root_temperatures_K": [
+        441.53663958678266
+      ]
+    },
+    {
+      "row": 3,
+      "column": 31,
+      "height_m": 0.20258064516129032,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0033223075329604796
+      ],
+      "relaxed_root_temperatures_K": [
+        470.69352223064146
+      ]
+    },
+    {
+      "row": 3,
+      "column": 32,
+      "height_m": 0.20258064516129032,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003221852428688756
+      ],
+      "relaxed_root_temperatures_K": [
+        501.02282781906524
+      ]
+    },
+    {
+      "row": 3,
+      "column": 33,
+      "height_m": 0.20258064516129032,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003125913255487835
+      ],
+      "relaxed_root_temperatures_K": [
+        532.5247631845457
+      ]
+    },
+    {
+      "row": 3,
+      "column": 34,
+      "height_m": 0.20258064516129032,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003034281605595619
+      ],
+      "relaxed_root_temperatures_K": [
+        565.2013413035085
+      ]
+    },
+    {
+      "row": 3,
+      "column": 35,
+      "height_m": 0.20258064516129032,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0029467519373015667
+      ],
+      "relaxed_root_temperatures_K": [
+        599.0532817984437
+      ]
+    },
+    {
+      "row": 3,
+      "column": 36,
+      "height_m": 0.20258064516129032,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0028631294663141764
+      ],
+      "relaxed_root_temperatures_K": [
+        634.0774518160837
+      ]
+    },
+    {
+      "row": 3,
+      "column": 37,
+      "height_m": 0.20258064516129032,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002783233397320578
+      ],
+      "relaxed_root_temperatures_K": [
+        670.2649786790264
+      ]
+    },
+    {
+      "row": 3,
+      "column": 38,
+      "height_m": 0.20258064516129032,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0027068970860721175
+      ],
+      "relaxed_root_temperatures_K": [
+        707.6000960150158
+      ]
+    },
+    {
+      "row": 3,
+      "column": 39,
+      "height_m": 0.20258064516129032,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00263396637273236
+      ],
+      "relaxed_root_temperatures_K": [
+        746.0597299028976
+      ]
+    },
+    {
+      "row": 3,
+      "column": 40,
+      "height_m": 0.20258064516129032,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0025642970273056986
+      ],
+      "relaxed_root_temperatures_K": [
+        785.6137757357466
+      ]
+    },
+    {
+      "row": 3,
+      "column": 41,
+      "height_m": 0.20258064516129032,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0024977519951593784
+      ],
+      "relaxed_root_temperatures_K": [
+        826.2259614906849
+      ]
+    },
+    {
+      "row": 3,
+      "column": 42,
+      "height_m": 0.20258064516129032,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002434198914479902
+      ],
+      "relaxed_root_temperatures_K": [
+        867.8551468768082
+      ]
+    },
+    {
+      "row": 3,
+      "column": 43,
+      "height_m": 0.20258064516129032,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0023735081867140217
+      ],
+      "relaxed_root_temperatures_K": [
+        910.4568810456003
+      ]
+    },
+    {
+      "row": 3,
+      "column": 44,
+      "height_m": 0.20258064516129032,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002315551717597272
+      ],
+      "relaxed_root_temperatures_K": [
+        953.9850398767653
+      ]
+    },
+    {
+      "row": 3,
+      "column": 45,
+      "height_m": 0.20258064516129032,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002265570671831234
+      ],
+      "relaxed_root_temperatures_K": [
+        996.0791580286871
+      ]
+    },
+    {
+      "row": 3,
+      "column": 46,
+      "height_m": 0.20258064516129032,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 3,
+      "column": 47,
+      "height_m": 0.20258064516129032,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 3,
+      "column": 48,
+      "height_m": 0.20258064516129032,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 3,
+      "column": 49,
+      "height_m": 0.20258064516129032,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "no_root_found_to_eos_limit",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [],
+      "relaxed_root_temperatures_K": []
+    },
+    {
+      "row": 4,
+      "column": 26,
+      "height_m": 0.2667741935483871,
+      "power_W": 19271.020408163266,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005204024196392949
+      ],
+      "relaxed_root_temperatures_K": [
+        253.70809650875523
+      ]
+    },
+    {
+      "row": 4,
+      "column": 27,
+      "height_m": 0.2667741935483871,
+      "power_W": 19998.367346938772,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005053624735904532
+      ],
+      "relaxed_root_temperatures_K": [
+        270.4203131804284
+      ]
+    },
+    {
+      "row": 4,
+      "column": 28,
+      "height_m": 0.2667741935483871,
+      "power_W": 20725.714285714283,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004906301413387911
+      ],
+      "relaxed_root_temperatures_K": [
+        288.19060094309543
+      ]
+    },
+    {
+      "row": 4,
+      "column": 29,
+      "height_m": 0.2667741935483871,
+      "power_W": 21453.061224489797,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004762649857036085
+      ],
+      "relaxed_root_temperatures_K": [
+        307.01233436497694
+      ]
+    },
+    {
+      "row": 4,
+      "column": 30,
+      "height_m": 0.2667741935483871,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004623213951376436
+      ],
+      "relaxed_root_temperatures_K": [
+        326.8624670475032
+      ]
+    },
+    {
+      "row": 4,
+      "column": 31,
+      "height_m": 0.2667741935483871,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004488422581102274
+      ],
+      "relaxed_root_temperatures_K": [
+        347.70888891087026
+      ]
+    },
+    {
+      "row": 4,
+      "column": 32,
+      "height_m": 0.2667741935483871,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004358558922005189
+      ],
+      "relaxed_root_temperatures_K": [
+        369.51746482833073
+      ]
+    },
+    {
+      "row": 4,
+      "column": 33,
+      "height_m": 0.2667741935483871,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004233759940494534
+      ],
+      "relaxed_root_temperatures_K": [
+        392.2573299725638
+      ]
+    },
+    {
+      "row": 4,
+      "column": 34,
+      "height_m": 0.2667741935483871,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00411403653080996
+      ],
+      "relaxed_root_temperatures_K": [
+        415.9039123746015
+      ]
+    },
+    {
+      "row": 4,
+      "column": 35,
+      "height_m": 0.2667741935483871,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003999303227683378
+      ],
+      "relaxed_root_temperatures_K": [
+        440.4398949230801
+      ]
+    },
+    {
+      "row": 4,
+      "column": 36,
+      "height_m": 0.2667741935483871,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0038894088688346752
+      ],
+      "relaxed_root_temperatures_K": [
+        465.8546913175736
+      ]
+    },
+    {
+      "row": 4,
+      "column": 37,
+      "height_m": 0.2667741935483871,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0037841632173646277
+      ],
+      "relaxed_root_temperatures_K": [
+        492.14304911634736
+      ]
+    },
+    {
+      "row": 4,
+      "column": 38,
+      "height_m": 0.2667741935483871,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003683357607669779
+      ],
+      "relaxed_root_temperatures_K": [
+        519.3032667613604
+      ]
+    },
+    {
+      "row": 4,
+      "column": 39,
+      "height_m": 0.2667741935483871,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0035867795795019868
+      ],
+      "relaxed_root_temperatures_K": [
+        547.3353506783674
+      ]
+    },
+    {
+      "row": 4,
+      "column": 40,
+      "height_m": 0.2667741935483871,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003494222365686319
+      ],
+      "relaxed_root_temperatures_K": [
+        576.2393073036701
+      ]
+    },
+    {
+      "row": 4,
+      "column": 41,
+      "height_m": 0.2667741935483871,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0034054903632173565
+      ],
+      "relaxed_root_temperatures_K": [
+        606.0136781717282
+      ]
+    },
+    {
+      "row": 4,
+      "column": 42,
+      "height_m": 0.2667741935483871,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003320401663015806
+      ],
+      "relaxed_root_temperatures_K": [
+        636.6543754180728
+      ]
+    },
+    {
+      "row": 4,
+      "column": 43,
+      "height_m": 0.2667741935483871,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0032387885412447923
+      ],
+      "relaxed_root_temperatures_K": [
+        668.1538459599674
+      ]
+    },
+    {
+      "row": 4,
+      "column": 44,
+      "height_m": 0.2667741935483871,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003160496627037687
+      ],
+      "relaxed_root_temperatures_K": [
+        700.5005731676921
+      ]
+    },
+    {
+      "row": 4,
+      "column": 45,
+      "height_m": 0.2667741935483871,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003085383296782731
+      ],
+      "relaxed_root_temperatures_K": [
+        733.6789078019498
+      ]
+    },
+    {
+      "row": 4,
+      "column": 46,
+      "height_m": 0.2667741935483871,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003013315710778121
+      ],
+      "relaxed_root_temperatures_K": [
+        767.6692026471056
+      ]
+    },
+    {
+      "row": 4,
+      "column": 47,
+      "height_m": 0.2667741935483871,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0029441687988637426
+      ],
+      "relaxed_root_temperatures_K": [
+        802.4482081293759
+      ]
+    },
+    {
+      "row": 4,
+      "column": 48,
+      "height_m": 0.2667741935483871,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.002877823410052764
+      ],
+      "relaxed_root_temperatures_K": [
+        837.9896715935505
+      ]
+    },
+    {
+      "row": 4,
+      "column": 49,
+      "height_m": 0.2667741935483871,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0028141647623661876
+      ],
+      "relaxed_root_temperatures_K": [
+        874.2650734089265
+      ]
+    },
+    {
+      "row": 5,
+      "column": 30,
+      "height_m": 0.33096774193548384,
+      "power_W": 22180.408163265307,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005795106781074846
+      ],
+      "relaxed_root_temperatures_K": [
+        261.8583655583789
+      ]
+    },
+    {
+      "row": 5,
+      "column": 31,
+      "height_m": 0.33096774193548384,
+      "power_W": 22907.755102040817,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005639186045913278
+      ],
+      "relaxed_root_temperatures_K": [
+        277.38453816752366
+      ]
+    },
+    {
+      "row": 5,
+      "column": 32,
+      "height_m": 0.33096774193548384,
+      "power_W": 23635.102040816328,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005486861639398815
+      ],
+      "relaxed_root_temperatures_K": [
+        293.7683618506586
+      ]
+    },
+    {
+      "row": 5,
+      "column": 33,
+      "height_m": 0.33096774193548384,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0053385864678826955
+      ],
+      "relaxed_root_temperatures_K": [
+        310.99779102328233
+      ]
+    },
+    {
+      "row": 5,
+      "column": 34,
+      "height_m": 0.33096774193548384,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005194754067581609
+      ],
+      "relaxed_root_temperatures_K": [
+        329.051309635028
+      ]
+    },
+    {
+      "row": 5,
+      "column": 35,
+      "height_m": 0.33096774193548384,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005055660926149582
+      ],
+      "relaxed_root_temperatures_K": [
+        347.902609910979
+      ]
+    },
+    {
+      "row": 5,
+      "column": 36,
+      "height_m": 0.33096774193548384,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004921490581636459
+      ],
+      "relaxed_root_temperatures_K": [
+        367.5248122980323
+      ]
+    },
+    {
+      "row": 5,
+      "column": 37,
+      "height_m": 0.33096774193548384,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004792316452349441
+      ],
+      "relaxed_root_temperatures_K": [
+        387.8935886534164
+      ]
+    },
+    {
+      "row": 5,
+      "column": 38,
+      "height_m": 0.33096774193548384,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0046681171513198345
+      ],
+      "relaxed_root_temperatures_K": [
+        408.98898365625087
+      ]
+    },
+    {
+      "row": 5,
+      "column": 39,
+      "height_m": 0.33096774193548384,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004548797673753671
+      ],
+      "relaxed_root_temperatures_K": [
+        430.7960665775059
+      ]
+    },
+    {
+      "row": 5,
+      "column": 40,
+      "height_m": 0.33096774193548384,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004434211304140745
+      ],
+      "relaxed_root_temperatures_K": [
+        453.30471296805194
+      ]
+    },
+    {
+      "row": 5,
+      "column": 41,
+      "height_m": 0.33096774193548384,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004324179109805222
+      ],
+      "relaxed_root_temperatures_K": [
+        476.5088400878893
+      ]
+    },
+    {
+      "row": 5,
+      "column": 42,
+      "height_m": 0.33096774193548384,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004218505635291478
+      ],
+      "relaxed_root_temperatures_K": [
+        500.40536534047413
+      ]
+    },
+    {
+      "row": 5,
+      "column": 43,
+      "height_m": 0.33096774193548384,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00411699058164161
+      ],
+      "relaxed_root_temperatures_K": [
+        524.993079271929
+      ]
+    },
+    {
+      "row": 5,
+      "column": 44,
+      "height_m": 0.33096774193548384,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00401943688086262
+      ],
+      "relaxed_root_temperatures_K": [
+        550.2715552069559
+      ]
+    },
+    {
+      "row": 5,
+      "column": 45,
+      "height_m": 0.33096774193548384,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003925655820320818
+      ],
+      "relaxed_root_temperatures_K": [
+        576.2401671855391
+      ]
+    },
+    {
+      "row": 5,
+      "column": 46,
+      "height_m": 0.33096774193548384,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003835469897565886
+      ],
+      "relaxed_root_temperatures_K": [
+        602.8972557832085
+      ]
+    },
+    {
+      "row": 5,
+      "column": 47,
+      "height_m": 0.33096774193548384,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003748714010874049
+      ],
+      "relaxed_root_temperatures_K": [
+        630.2394625040134
+      ]
+    },
+    {
+      "row": 5,
+      "column": 48,
+      "height_m": 0.33096774193548384,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0036652354841658244
+      ],
+      "relaxed_root_temperatures_K": [
+        658.2612422287448
+      ]
+    },
+    {
+      "row": 5,
+      "column": 49,
+      "height_m": 0.33096774193548384,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.003584893321003813
+      ],
+      "relaxed_root_temperatures_K": [
+        686.9545554786297
+      ]
+    },
+    {
+      "row": 6,
+      "column": 33,
+      "height_m": 0.3951612903225806,
+      "power_W": 24362.448979591834,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006418837225539779
+      ],
+      "relaxed_root_temperatures_K": [
+        259.7573555255173
+      ]
+    },
+    {
+      "row": 6,
+      "column": 34,
+      "height_m": 0.3951612903225806,
+      "power_W": 25089.795918367345,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006257767811524194
+      ],
+      "relaxed_root_temperatures_K": [
+        273.8749706855045
+      ]
+    },
+    {
+      "row": 6,
+      "column": 35,
+      "height_m": 0.3951612903225806,
+      "power_W": 25817.142857142855,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006100277827578729
+      ],
+      "relaxed_root_temperatures_K": [
+        288.713734186064
+      ]
+    },
+    {
+      "row": 6,
+      "column": 36,
+      "height_m": 0.3951612903225806,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005946741547944642
+      ],
+      "relaxed_root_temperatures_K": [
+        304.2655714134898
+      ]
+    },
+    {
+      "row": 6,
+      "column": 37,
+      "height_m": 0.3951612903225806,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005797496735089344
+      ],
+      "relaxed_root_temperatures_K": [
+        320.51469152940393
+      ]
+    },
+    {
+      "row": 6,
+      "column": 38,
+      "height_m": 0.3951612903225806,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005652812032670544
+      ],
+      "relaxed_root_temperatures_K": [
+        337.44070405501583
+      ]
+    },
+    {
+      "row": 6,
+      "column": 39,
+      "height_m": 0.3951612903225806,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005512869434451182
+      ],
+      "relaxed_root_temperatures_K": [
+        355.02163410506853
+      ]
+    },
+    {
+      "row": 6,
+      "column": 40,
+      "height_m": 0.3951612903225806,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005377760944180436
+      ],
+      "relaxed_root_temperatures_K": [
+        373.2363845230277
+      ]
+    },
+    {
+      "row": 6,
+      "column": 41,
+      "height_m": 0.3951612903225806,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005247496002020345
+      ],
+      "relaxed_root_temperatures_K": [
+        392.066419134439
+      ]
+    },
+    {
+      "row": 6,
+      "column": 42,
+      "height_m": 0.3951612903225806,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005122015327891121
+      ],
+      "relaxed_root_temperatures_K": [
+        411.49665524125095
+      ]
+    },
+    {
+      "row": 6,
+      "column": 43,
+      "height_m": 0.3951612903225806,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005001207244557759
+      ],
+      "relaxed_root_temperatures_K": [
+        431.5156932491953
+      ]
+    },
+    {
+      "row": 6,
+      "column": 44,
+      "height_m": 0.3951612903225806,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004884923635255367
+      ],
+      "relaxed_root_temperatures_K": [
+        452.11556811943905
+      ]
+    },
+    {
+      "row": 6,
+      "column": 45,
+      "height_m": 0.3951612903225806,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004772993884741444
+      ],
+      "relaxed_root_temperatures_K": [
+        473.2912034043984
+      ]
+    },
+    {
+      "row": 6,
+      "column": 46,
+      "height_m": 0.3951612903225806,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004665236114164441
+      ],
+      "relaxed_root_temperatures_K": [
+        495.0397142694784
+      ]
+    },
+    {
+      "row": 6,
+      "column": 47,
+      "height_m": 0.3951612903225806,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004561465652508464
+      ],
+      "relaxed_root_temperatures_K": [
+        517.3596641887058
+      ]
+    },
+    {
+      "row": 6,
+      "column": 48,
+      "height_m": 0.3951612903225806,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004461501029616212
+      ],
+      "relaxed_root_temperatures_K": [
+        540.2503434918045
+      ]
+    },
+    {
+      "row": 6,
+      "column": 49,
+      "height_m": 0.3951612903225806,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.004365167914397791
+      ],
+      "relaxed_root_temperatures_K": [
+        563.7111109166127
+      ]
+    },
+    {
+      "row": 7,
+      "column": 36,
+      "height_m": 0.4593548387096774,
+      "power_W": 26544.48979591837,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006949935994522344
+      ],
+      "relaxed_root_temperatures_K": [
+        261.3290400159022
+      ]
+    },
+    {
+      "row": 7,
+      "column": 37,
+      "height_m": 0.4593548387096774,
+      "power_W": 27271.83673469388,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006785967273893269
+      ],
+      "relaxed_root_temperatures_K": [
+        274.50335633889233
+      ]
+    },
+    {
+      "row": 7,
+      "column": 38,
+      "height_m": 0.4593548387096774,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006625586010373527
+      ],
+      "relaxed_root_temperatures_K": [
+        288.29848078055517
+      ]
+    },
+    {
+      "row": 7,
+      "column": 39,
+      "height_m": 0.4593548387096774,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0064691072345424835
+      ],
+      "relaxed_root_temperatures_K": [
+        302.70714249645823
+      ]
+    },
+    {
+      "row": 7,
+      "column": 40,
+      "height_m": 0.4593548387096774,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006316815950264446
+      ],
+      "relaxed_root_temperatures_K": [
+        317.716249766336
+      ]
+    },
+    {
+      "row": 7,
+      "column": 41,
+      "height_m": 0.4593548387096774,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006168941780851356
+      ],
+      "relaxed_root_temperatures_K": [
+        333.30909271670765
+      ]
+    },
+    {
+      "row": 7,
+      "column": 42,
+      "height_m": 0.4593548387096774,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006025644532092257
+      ],
+      "relaxed_root_temperatures_K": [
+        349.4674990277416
+      ]
+    },
+    {
+      "row": 7,
+      "column": 43,
+      "height_m": 0.4593548387096774,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005887010205801065
+      ],
+      "relaxed_root_temperatures_K": [
+        366.173652715204
+      ]
+    },
+    {
+      "row": 7,
+      "column": 44,
+      "height_m": 0.4593548387096774,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005753055298612822
+      ],
+      "relaxed_root_temperatures_K": [
+        383.41141440726034
+      ]
+    },
+    {
+      "row": 7,
+      "column": 45,
+      "height_m": 0.4593548387096774,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005623736473596026
+      ],
+      "relaxed_root_temperatures_K": [
+        401.1671104075674
+      ]
+    },
+    {
+      "row": 7,
+      "column": 46,
+      "height_m": 0.4593548387096774,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005498962797851351
+      ],
+      "relaxed_root_temperatures_K": [
+        419.42985091960406
+      ]
+    },
+    {
+      "row": 7,
+      "column": 47,
+      "height_m": 0.4593548387096774,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005378608353355917
+      ],
+      "relaxed_root_temperatures_K": [
+        438.19148469173723
+      ]
+    },
+    {
+      "row": 7,
+      "column": 48,
+      "height_m": 0.4593548387096774,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0052625237982227525
+      ],
+      "relaxed_root_temperatures_K": [
+        457.44630606770676
+      ]
+    },
+    {
+      "row": 7,
+      "column": 49,
+      "height_m": 0.4593548387096774,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0051505461424170675
+      ],
+      "relaxed_root_temperatures_K": [
+        477.19061628176604
+      ]
+    },
+    {
+      "row": 8,
+      "column": 38,
+      "height_m": 0.5235483870967742,
+      "power_W": 27999.183673469386,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007575333825391382
+      ],
+      "relaxed_root_temperatures_K": [
+        253.25079331856176
+      ]
+    },
+    {
+      "row": 8,
+      "column": 39,
+      "height_m": 0.5235483870967742,
+      "power_W": 28726.5306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007406688322310564
+      ],
+      "relaxed_root_temperatures_K": [
+        265.2176429413281
+      ]
+    },
+    {
+      "row": 8,
+      "column": 40,
+      "height_m": 0.5235483870967742,
+      "power_W": 29453.877551020403,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007241376858536414
+      ],
+      "relaxed_root_temperatures_K": [
+        277.7299782195466
+      ]
+    },
+    {
+      "row": 8,
+      "column": 41,
+      "height_m": 0.5235483870967742,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007079672062583305
+      ],
+      "relaxed_root_temperatures_K": [
+        290.785879156072
+      ]
+    },
+    {
+      "row": 8,
+      "column": 42,
+      "height_m": 0.5235483870967742,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006921842257399399
+      ],
+      "relaxed_root_temperatures_K": [
+        304.37774879509857
+      ]
+    },
+    {
+      "row": 8,
+      "column": 43,
+      "height_m": 0.5235483870967742,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0067681255979864
+      ],
+      "relaxed_root_temperatures_K": [
+        318.49378265799
+      ]
+    },
+    {
+      "row": 8,
+      "column": 44,
+      "height_m": 0.5235483870967742,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00661871149933822
+      ],
+      "relaxed_root_temperatures_K": [
+        333.11960425614893
+      ]
+    },
+    {
+      "row": 8,
+      "column": 45,
+      "height_m": 0.5235483870967742,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006473730309571356
+      ],
+      "relaxed_root_temperatures_K": [
+        348.2398333912166
+      ]
+    },
+    {
+      "row": 8,
+      "column": 46,
+      "height_m": 0.5235483870967742,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006333250693054947
+      ],
+      "relaxed_root_temperatures_K": [
+        363.8394066989289
+      ]
+    },
+    {
+      "row": 8,
+      "column": 47,
+      "height_m": 0.5235483870967742,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006197283122361268
+      ],
+      "relaxed_root_temperatures_K": [
+        379.9045505360734
+      ]
+    },
+    {
+      "row": 8,
+      "column": 48,
+      "height_m": 0.5235483870967742,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006065787414771459
+      ],
+      "relaxed_root_temperatures_K": [
+        396.4233853601644
+      ]
+    },
+    {
+      "row": 8,
+      "column": 49,
+      "height_m": 0.5235483870967742,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.005938682319115839
+      ],
+      "relaxed_root_temperatures_K": [
+        413.38619869716666
+      ]
+    },
+    {
+      "row": 9,
+      "column": 41,
+      "height_m": 0.587741935483871,
+      "power_W": 30181.22448979592,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007971647200094842
+      ],
+      "relaxed_root_temperatures_K": [
+        259.14101455443785
+      ]
+    },
+    {
+      "row": 9,
+      "column": 42,
+      "height_m": 0.587741935483871,
+      "power_W": 30908.57142857143,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007802732710501761
+      ],
+      "relaxed_root_temperatures_K": [
+        270.68613577379654
+      ]
+    },
+    {
+      "row": 9,
+      "column": 43,
+      "height_m": 0.587741935483871,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007637207248129442
+      ],
+      "relaxed_root_temperatures_K": [
+        282.7168774528692
+      ]
+    },
+    {
+      "row": 9,
+      "column": 44,
+      "height_m": 0.587741935483871,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007475311997205024
+      ],
+      "relaxed_root_temperatures_K": [
+        295.22919947034103
+      ]
+    },
+    {
+      "row": 9,
+      "column": 45,
+      "height_m": 0.587741935483871,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007317274848386794
+      ],
+      "relaxed_root_temperatures_K": [
+        308.214961611381
+      ]
+    },
+    {
+      "row": 9,
+      "column": 46,
+      "height_m": 0.587741935483871,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007163291533029212
+      ],
+      "relaxed_root_temperatures_K": [
+        321.6631119389427
+      ]
+    },
+    {
+      "row": 9,
+      "column": 47,
+      "height_m": 0.587741935483871,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007013512800407973
+      ],
+      "relaxed_root_temperatures_K": [
+        335.56093224686475
+      ]
+    },
+    {
+      "row": 9,
+      "column": 48,
+      "height_m": 0.587741935483871,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006868037935286132
+      ],
+      "relaxed_root_temperatures_K": [
+        349.89518973847663
+      ]
+    },
+    {
+      "row": 9,
+      "column": 49,
+      "height_m": 0.587741935483871,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.006726913949940676
+      ],
+      "relaxed_root_temperatures_K": [
+        364.6530860985728
+      ]
+    },
+    {
+      "row": 10,
+      "column": 43,
+      "height_m": 0.6519354838709677,
+      "power_W": 31635.918367346938,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008488388016385124
+      ],
+      "relaxed_root_temperatures_K": [
+        255.26828368002126
+      ]
+    },
+    {
+      "row": 10,
+      "column": 44,
+      "height_m": 0.6519354838709677,
+      "power_W": 32363.265306122456,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008316829339602904
+      ],
+      "relaxed_root_temperatures_K": [
+        266.0643766263425
+      ]
+    },
+    {
+      "row": 10,
+      "column": 45,
+      "height_m": 0.6519354838709677,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008148498243866122
+      ],
+      "relaxed_root_temperatures_K": [
+        277.29821038339315
+      ]
+    },
+    {
+      "row": 10,
+      "column": 46,
+      "height_m": 0.6519354838709677,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007983608726468203
+      ],
+      "relaxed_root_temperatures_K": [
+        288.96785269391137
+      ]
+    },
+    {
+      "row": 10,
+      "column": 47,
+      "height_m": 0.6519354838709677,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007822371641961989
+      ],
+      "relaxed_root_temperatures_K": [
+        301.06764385608057
+      ]
+    },
+    {
+      "row": 10,
+      "column": 48,
+      "height_m": 0.6519354838709677,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.007664977178210773
+      ],
+      "relaxed_root_temperatures_K": [
+        313.58906239030136
+      ]
+    },
+    {
+      "row": 10,
+      "column": 49,
+      "height_m": 0.6519354838709677,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.0075115817085136686
+      ],
+      "relaxed_root_temperatures_K": [
+        326.5216911748242
+      ]
+    },
+    {
+      "row": 11,
+      "column": 45,
+      "height_m": 0.7161290322580646,
+      "power_W": 33090.61224489796,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008963090453616464
+      ],
+      "relaxed_root_temperatures_K": [
+        252.9749759428634
+      ]
+    },
+    {
+      "row": 11,
+      "column": 46,
+      "height_m": 0.7161290322580646,
+      "power_W": 33817.95918367347,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00878960657627082
+      ],
+      "relaxed_root_temperatures_K": [
+        263.177925537891
+      ]
+    },
+    {
+      "row": 11,
+      "column": 47,
+      "height_m": 0.7161290322580646,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008619227552072917
+      ],
+      "relaxed_root_temperatures_K": [
+        273.7788780616484
+      ]
+    },
+    {
+      "row": 11,
+      "column": 48,
+      "height_m": 0.7161290322580646,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.008452143872844693
+      ],
+      "relaxed_root_temperatures_K": [
+        284.7770465709917
+      ]
+    },
+    {
+      "row": 11,
+      "column": 49,
+      "height_m": 0.7161290322580646,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00828854840766181
+      ],
+      "relaxed_root_temperatures_K": [
+        296.16835423103214
+      ]
+    },
+    {
+      "row": 12,
+      "column": 47,
+      "height_m": 0.7803225806451612,
+      "power_W": 34545.30612244898,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00940085030719251
+      ],
+      "relaxed_root_temperatures_K": [
+        251.85405224204047
+      ]
+    },
+    {
+      "row": 12,
+      "column": 48,
+      "height_m": 0.7803225806451612,
+      "power_W": 35272.65306122449,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.009225996924545272
+      ],
+      "relaxed_root_temperatures_K": [
+        261.5784809210255
+      ]
+    },
+    {
+      "row": 12,
+      "column": 49,
+      "height_m": 0.7803225806451612,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.00905415250267715
+      ],
+      "relaxed_root_temperatures_K": [
+        271.6676476916116
+      ]
+    },
+    {
+      "row": 13,
+      "column": 49,
+      "height_m": 0.8445161290322581,
+      "power_W": 36000.0,
+      "recorded_status": "no_root_in_domain",
+      "diagnosis": "temperature_cap_excluded",
+      "roots_at_configured_cap_kg_s": [],
+      "roots_at_eos_limit_kg_s": [
+        0.009805907863199705
+      ],
+      "relaxed_root_temperatures_K": [
+        251.6294116242915
+      ]
+    }
+  ]
+}

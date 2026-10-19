@@ -10,6 +10,22 @@ if strcmp(kind,'sweep')
         xlabel('Absorbed heater power [kW]'); ylabel('Liquid height [m]'); title(item{3});
         savefig_png(f,figDir,item{1});
     end
+    % Display recorded status categories rather than treating gaps as zero.
+    statuses=string(S.status);
+    categories=unique(statuses(:),'stable');
+    codes=zeros(size(statuses)); labels=cell(numel(categories),1);
+    for j=1:numel(categories)
+        mask=statuses==categories(j); codes(mask)=j;
+        labels{j}=sprintf('%s (%d)',categories(j),nnz(mask));
+    end
+    f=figure('Color','w');
+    imagesc(S.Q_list/1e3,S.H_list,codes); axis xy;
+    colormap(f,lines(numel(categories))); clim([.5,numel(categories)+.5]);
+    cb=colorbar; cb.Ticks=1:numel(categories); cb.TickLabels=labels;
+    cb.TickLabelInterpreter='none';
+    xlabel('Absorbed heater power [kW]'); ylabel('Liquid height [m]');
+    title({'Recorded solver status','Unsolved does not mean zero flow'});
+    savefig_png(f,figDir,'sweep_validity_H_Q');
     data={S.Q_list/1e3,S.mdot_vs_Q*60,'mdot_vs_Q','Absorbed heater power [kW]','Mass flow [kg/min]'; ...
           S.H_list,S.mdot_vs_H*60,'mdot_vs_H','Liquid height [m]','Mass flow [kg/min]'; ...
           S.Q_list/1e3,S.x_vs_Q,'x_out_vs_Q','Absorbed heater power [kW]','Outlet vapor fraction'; ...

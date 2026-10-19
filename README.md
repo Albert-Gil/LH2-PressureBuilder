@@ -47,11 +47,21 @@ Blank map regions represent cases without an accepted solution in the configured
 - Track liquid-to-vapor inventory transfer during exponentially decaying heater power.
 - Fit an effective return-loss coefficient to a flow measurement or design target.
 - Save parameters, validity flags, residuals, diagnostics, and provenance with each dataset.
-- Generate eleven figures through MATLAB or a standalone Python plotter.
+- Generate twelve study figures through MATLAB or Python, plus an independent diagnostic map and an annotated physical schematic.
 
 Internally, units are kg/s, Pa, W, m, K, and J/kg. Figures generally show **kg/min** and **kW**. The calibration function accepts a target in **kg/min**.
 
 ## Physical configuration
+
+![Annotated pressure-builder model schematic](docs/model_schematic.svg)
+
+The drawing uses a circular tank cross-section and the uncalibrated reference parameters. It labels liquid height, return elevation, absorbed heat, flow direction, outlet state, pipe dimensions, and effective losses. The heater and takeoff share the head datum used by the equations. This is a model schematic, not a fabrication drawing.
+
+Download the [SVG](docs/model_schematic.svg) or [PNG](docs/model_schematic.png). Regenerate both from the saved reference parameter struct:
+
+```bash
+python python/generate_model_schematic.py
+```
 
 ```mermaid
 flowchart TD
@@ -520,13 +530,15 @@ Tracked October 2026 datasets predate the added Git/schema fields. They retain t
 | `mdot_vs_H.png` | Flow versus height |
 | `T_out_vs_Q.png` | Temperature versus power |
 | `x_out_vs_Q.png` | Vapor fraction versus power |
+| `sweep_validity_H_Q.png` | Recorded solver status and point counts; no inferred failure causes |
+| `sweep_failure_diagnosis_H_Q.png` | Independent audit distinguishing temperature-cap exclusions from points with no detected root up to the EOS limit; generated separately |
 | `power_decay_transient.png` | Power, level, flow, temperature, and vapor fraction |
 | `SOC_scenario_drivers.png` | Prescribed SOC/height and power |
 | `SOC_scenario_mdot_Tout.png` | SOC-scenario flow and temperature |
 | `constH_scenario_drivers.png` | Constant height and shared power schedules |
 | `constH_scenario_mdot_Tout.png` | Constant-height flow and temperature |
 
-Generate all eleven PNGs without MATLAB:
+Generate all twelve standard study PNGs without MATLAB:
 
 ```bash
 python python/plot_vaporizer_results.py
@@ -572,6 +584,42 @@ title('Accepted-solution mask');
 ```
 
 The tracked sweep has **261 `no_root_in_domain` cases out of 1,600**. This status alone does not distinguish temperature-cap exclusion, flow-bound exclusion, or other absence of a detected root. Inspect the full single-point solver record and, where physically justified, test different search bounds or caps.
+
+### Diagnosing the unsolved region
+
+![Recorded sweep validity](results/figures/sweep_validity_H_Q.png)
+
+The Python performance maps now shade unsolved cells gray and identify them in a legend. The validity map reports the original MATLAB status. A separate equation-level audit investigates all 261 unsolved points without changing the solver, the 250 K cap, or the MAT datasets:
+
+```bash
+python python/diagnose_sweep.py
+```
+
+The audit uses CoolProp 7.2.0, 512 logarithmic samples plus phase boundaries, and the 5 kg/s hard flow bound. It repeats the search with the configured **250 K** cap and the fluid's **1,000 K EOS temperature limit**. Its equations reproduce the accepted saved reference point before any failure classifications are made.
+
+| Result | Points | Interpretation |
+|---|---:|---|
+| Accepted in the saved MATLAB sweep | 1,339 | Original valid operating points |
+| Root found only above the configured 250 K cap | 176 | Temperature-domain exclusions; relaxed roots are diagnostic, not accepted operating points |
+| No root found even up to the 1,000 K EOS limit | 85 | No sign-changing root detected in either scanned domain; physical stagnation is not established |
+| In-domain root recovered by the denser scan | 0 | No sampled evidence of an overlooked in-domain root |
+
+![Unsolved-region diagnosis](results/figures/sweep_failure_diagnosis_H_Q.png)
+
+Representative cases illustrate the distinction:
+
+| Liquid height [m] | Power [kW] | Relaxed-domain result |
+|---:|---:|---|
+| 0.010000 | 0.360000 | Root at approximately 0.001902 kg/min and 776.783 K; excluded by the 250 K cap |
+| 0.330968 | 22.180408 | Root at approximately 0.347706 kg/min and 261.858 K; just outside the cap |
+| 0.844516 | 36.000000 | Root at approximately 0.588354 kg/min and 251.629 K; close to the accepted-domain boundary |
+| 0.202581 | 36.000000 | No root found up to the EOS temperature and hard flow limits |
+
+Low liquid height reduces supply head. Reducing flow can raise outlet temperature and lower return density; these low-density states also change return-side friction, minor, and acceleration losses. Some roots therefore lie beyond the selected temperature cap; other points have no detected root within even the wider property domain. These are different outcomes and should not be combined into a zero-flow prediction.
+
+The audit is an independent Python evaluation of the model equations, **not a MATLAB solver rerun**. Finite scans cannot rule out tangent/narrow roots or roots outside the property/flow limits. Six representative cases are also checked at 1,024 samples in the regression suite.
+
+The generated [report](results/sweep_diagnostics.md) gives representative points and caveats; [JSON records](results/sweep_diagnostics.json) contain all 261 cases, relaxed roots, temperatures, scan settings, and the source MAT SHA-256 hash. Regenerate these when the source dataset changes. For another saved sweep, pass `--directory <folder>`; use `--samples 1024` for a denser diagnostic search.
 
 ## Reference results
 
@@ -620,7 +668,7 @@ The suite exercises geometry near empty/full conditions, inventory accounting/de
 
 ### GitHub Actions
 
-`.github/workflows/checks.yml` runs on pushes, pull requests, and manual dispatch. It installs Python 3.12 and declared dependencies, runs Python checks, and regenerates eleven figures in a temporary directory.
+`.github/workflows/checks.yml` runs on pushes, pull requests, and manual dispatch. It installs Python 3.12 and declared dependencies, runs Python checks, regenerates twelve standard study figures, audits the unsolved region, and generates the schematic in temporary directories. Diagnostic tests check the source hash, classification counts, relaxed-root pressure balances and temperatures, and representative cases on a denser grid.
 
 It requires no MATLAB license and **does not run the MATLAB suite**. Run that locally or add a licensed runner before treating CI as verification of solver-source changes. Hosted results become available after the workflow is committed and pushed with Actions enabled.
 
@@ -651,9 +699,13 @@ Adding a workflow does not change branch protection or hosted repository setting
 | `output/vap_result_metadata.m` | Versions, timestamp, and Git provenance |
 | `output/vap_results_dir.m` | Default output location |
 | `python/plot_vaporizer_results.py` | Python plotting from MAT files |
-| `results/` | Tracked datasets and eleven figures |
+| `python/diagnose_sweep.py` | Independent equation audit, failure classification, JSON/report, diagnostic map |
+| `python/generate_model_schematic.py` | Reproducible annotated circular-tank schematic |
+| `docs/model_schematic.svg`, `docs/model_schematic.png` | Vector and raster physical schematic |
+| `results/` | Tracked datasets, twelve standard figures, and diagnostic outputs |
 | `tests/test_vaporizer.m` | MATLAB model regressions |
 | `tests/test_saved_results.py` | Python reference-data checks |
+| `tests/test_sweep_diagnostics.py` | Diagnostic provenance, classification, roots, and denser-scan checks |
 | `.github/workflows/checks.yml` | Python testing and plotting CI |
 | `requirements.txt` | Python dependencies |
 | `LICENSE` | GPL terms and project notice |

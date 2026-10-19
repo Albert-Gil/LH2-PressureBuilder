@@ -27,3 +27,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/lh2-results"
           cp results/*.mat "$RUNNER_TEMP/lh2-results/"
           python python/plot_vaporizer_results.py --directory "$RUNNER_TEMP/lh2-results"
+      - name: Diagnose unsolved points and generate the physical schematic
+        run: |
+          python python/diagnose_sweep.py --directory "$RUNNER_TEMP/lh2-results"
+          python python/generate_model_schematic.py --directory "$RUNNER_TEMP/lh2-docs"

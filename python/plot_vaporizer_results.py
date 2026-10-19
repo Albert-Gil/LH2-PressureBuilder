@@ -7,6 +7,8 @@ import warnings
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.colors import BoundaryNorm, ListedColormap
+from matplotlib.patches import Patch
 import numpy as np
 from scipy.io import loadmat
 
@@ -98,11 +100,15 @@ def plot_sweep(directory=RESULTS):
     for data, name, label in [(m, "mdot_map_H_Q", "Mass flow [kg/min]"),
                               (temp, "T_out_map_H_Q", "Outlet temperature [K]")]:
         fig, ax = plt.subplots(figsize=(8.5, 6), constrained_layout=True)
+        ax.set_facecolor('#e5e7eb')
         # pcolormesh also supports one-row or one-column custom sweeps.
         mesh = ax.pcolormesh(q, h, np.ma.masked_invalid(data), shading="nearest", cmap="viridis")
         fig.colorbar(mesh, ax=ax, label=label)
         ax.set(xlabel="Absorbed heater power [kW]", ylabel="Liquid height [m]",
                title=f"Horizontal heater / vertical return - {label}")
+        if np.any(~ok):
+            ax.legend(handles=[Patch(facecolor='#e5e7eb', label='No accepted solution')],
+                      loc='lower right', fontsize=10)
         outputs.append(save(fig, directory, name))
     specs = [(q, m[ih], "mdot_vs_Q", "Absorbed heater power [kW]", "Mass flow [kg/min]"),
              (h, m[:, iq], "mdot_vs_H", "Liquid height [m]", "Mass flow [kg/min]"),
@@ -125,7 +131,29 @@ def plot_sweep(directory=RESULTS):
             ax.set_ylim(0, 1.05)
         decorate(ax, xlabel, ylabel, title)
         outputs.append(save(fig, directory, name))
+    outputs.append(plot_sweep_validity(s, directory))
     return outputs
+
+
+def plot_sweep_validity(s, directory=RESULTS):
+    """Render saved solver categories; never infer failure causes from NaNs."""
+    h, q = np.atleast_1d(s['H_list']), np.atleast_1d(s['Q_list']) / 1000
+    status = np.asarray(s['status']).reshape(len(h), len(q))
+    categories = sorted(set(status.ravel()), key=lambda x: (x != 'solved', x))
+    codes = np.zeros(status.shape, dtype=int)
+    palette = ['#087f8c', '#e9b44c', '#b94e48', '#7b61a8', '#718096', '#d95f02']
+    for k, category in enumerate(categories):
+        codes[status == category] = k
+    colors = [palette[k % len(palette)] for k in range(len(categories))]
+    fig, ax = plt.subplots(figsize=(10, 6.5), constrained_layout=True)
+    ax.pcolormesh(q, h, codes, shading='nearest', cmap=ListedColormap(colors),
+                  norm=BoundaryNorm(np.arange(len(categories) + 1) - .5, len(categories)))
+    handles = [Patch(facecolor=colors[k], label=f'{name}: {np.count_nonzero(status == name):,}')
+               for k, name in enumerate(categories)]
+    fig.legend(handles=handles, loc='outside lower center', ncol=min(2, len(handles)), fontsize=12)
+    ax.set(xlabel='Absorbed heater power [kW]', ylabel='Liquid height [m]',
+           title='Sweep validity: recorded solver status\nUnsolved does not mean zero flow')
+    return save(fig, directory, 'sweep_validity_H_Q')
 
 
 def plot_power_decay(directory=RESULTS):
