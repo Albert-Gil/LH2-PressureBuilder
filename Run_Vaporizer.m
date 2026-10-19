@@ -1,4 +1,4 @@
-%MAIN_VAPORIZER Single entry point for the LH2 vaporizer studies.
+%RUN_VAPORIZER Single entry point for the LH2 vaporizer studies.
 % Switch studies on/off in the RUN block, adjust options and parameters,
 % then run this script. Every study uses the same parameter struct p.
 
