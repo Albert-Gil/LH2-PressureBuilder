@@ -13,7 +13,7 @@ RUN.python_plots = false;  % batch PNGs via python/plot_vaporizer_results.py
 %% Options
 makePlots = true;          % MATLAB figures saved to <outputDir>/figures
 outputDir = '';            % '' means <project root>/results
-calibration_target_kg_min = 1.1;
+calibration_target_kg_min = 0.30*3.6; % [kg/min] scaled target = 1.08
 
 %% Parameters (shared by every study)
 projectRoot = fileparts(mfilename('fullpath'));

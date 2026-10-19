@@ -1,10 +1,10 @@
 function [candidate, report] = calibrate_vaporizer_loss(target_kg_min, p)
 %CALIBRATE_VAPORIZER_LOSS One-point effective K_g fit; never changes defaults.
 % Uses the stated approximate flow as calibration, NOT independent validation.
-if nargin<1, target_kg_min=0.30; end
+if nargin<1, target_kg_min=0.30*3.6; end % [kg/min] scaled target = 1.08
 if nargin<2 || isempty(p), p=vap_default_params(); end
 validateattributes(target_kg_min,{'numeric'},{'scalar','real','finite','positive'});
-candidate=vap_validate_params(p); th=vap_thermo(p.P,p.T_L,p.fluid);
+p=vap_validate_params(p); candidate=p; th=vap_thermo(p.P,p.T_L,p.fluid);
 m=target_kg_min/60;
 baseline=vap_flow_state(m,p.H_ref,p.Qdot_ref,candidate,th);
 scale=(m/candidate.A)^2/(2*baseline.rho_out);
